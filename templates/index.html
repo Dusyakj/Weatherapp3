@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Weather Form</title>
+    <title>Погода</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h1>Enter your route:</h1>
+    <h1>Введите ваш маршрут:</h1>
     <form method="post" action="/weather">
-        <label for="start_city">Start City:</label><br>
+        <label for="start_city">Начальная точка:</label><br>
         <input type="text" id="start_city" name="start_city"><br>
 
-        <label for="end_city">End City:</label><br>
+        <label for="end_city">Конечная точка:</label><br>
         <input type="text" id="end_city" name="end_city"><br>
 
-        <label for="waypoints">Waypoints (comma-separated):</label><br>
+        <label for="waypoints">Остановки(через запятую):</label><br>
         <input type="text" id="waypoints" name="waypoints"><br>
         
-        <label for="days">Days:</label><br>
+        <label for="days">Дни:</label><br>
         <input type="number" id="days" name="days" min="2" max="5" value="2"><br>
 
         <input type="submit" value="Get Weather">
