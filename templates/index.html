@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Form</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Enter your route:</h1>
+    <form method="post" action="/weather">
+        <label for="start_city">Start City:</label><br>
+        <input type="text" id="start_city" name="start_city"><br>
+
+        <label for="end_city">End City:</label><br>
+        <input type="text" id="end_city" name="end_city"><br>
+
+        <label for="waypoints">Waypoints (comma-separated):</label><br>
+        <input type="text" id="waypoints" name="waypoints"><br>
+        
+        <label for="days">Days:</label><br>
+        <input type="number" id="days" name="days" min="2" max="5" value="2"><br>
+
+        <input type="submit" value="Get Weather">
+    </form>
+</body>
+</html>
